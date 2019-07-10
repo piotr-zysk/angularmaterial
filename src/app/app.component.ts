@@ -7,9 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   
-  checked = false;
+  checked = true;
   indeterminate = false;
   align = 'start';
   disabled = false;
 
+  toggle_checked() {
+    this.checked = !this.checked;
+  }
 }
